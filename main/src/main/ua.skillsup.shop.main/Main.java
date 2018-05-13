@@ -21,6 +21,7 @@ public class Main {
 
         ApplicationContext context = new GenericXmlApplicationContext("context-main.xml");
         UserServices userService = context.getBean(UserServices.class);
+        ProductServices productService = context.getBean(ProductServices.class);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -39,7 +40,6 @@ public class Main {
         }
 
 
-        //UserServices productService = context.getBean(ProductServices.class);
 
 
     }
