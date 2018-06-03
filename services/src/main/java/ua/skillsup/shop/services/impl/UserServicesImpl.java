@@ -2,8 +2,9 @@ package ua.skillsup.shop.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ua.skillsup.shop.jp1.dao.User;
-import ua.skillsup.shop.jp1.dao.module.repository.UserDao;
+import org.springframework.transaction.annotation.Transactional;
+import ua.skillsup.shop.web.dao.User;
+import ua.skillsup.shop.web.dao.module.repository.UserDao;
 import ua.skillsup.shop.services.UserServices;
 import ua.skillsup.shop.services.converters.UserConverter;
 import ua.skillsup.shop.services.dto.UserDto;
@@ -27,16 +28,27 @@ public class UserServicesImpl implements UserServices{
         this.userConverter = userConverter;
     }
 
-    public void  create(UserDto user){
+    @Transactional
+    public void create(UserDto user){
         User userEntity = userConverter.toEntity(user);
         userDao.create(userEntity);
+    }
+
+    @Transactional
+    public void delete(Long id){
+        userDao.delete(id);
+    }
+
+    @Transactional
+    public void update(Long id, UserDto user){
+        User entity = userConverter.toEntity(user);
+        userDao.update(id , entity);
     }
 
     public List<UserDto> findAll() {
         List<User> users = userDao.findAll();
 
         List<UserDto> userDto = new ArrayList<UserDto>();
-
         for(User user: users){
             UserDto dto = userConverter.toDto(user);
             userDto.add(dto);

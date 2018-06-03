@@ -1,6 +1,6 @@
 package ua.skillsup.shop.services.converters;
 
-import ua.skillsup.shop.jp1.dao.User;
+import ua.skillsup.shop.web.dao.User;
 import ua.skillsup.shop.services.dto.UserDto;
 
 /**
@@ -10,5 +10,4 @@ public interface UserConverter {
 
     User toEntity(UserDto dto);
     UserDto toDto(User entity);
-
 }

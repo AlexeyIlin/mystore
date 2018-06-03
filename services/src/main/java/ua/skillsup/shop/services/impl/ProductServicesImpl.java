@@ -1,9 +1,8 @@
 package ua.skillsup.shop.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import ua.skillsup.shop.jp1.dao.Product;
-import ua.skillsup.shop.jp1.dao.module.repository.ProductDao;
+import ua.skillsup.shop.web.dao.Product;
+import ua.skillsup.shop.web.dao.module.repository.ProductDao;
 import ua.skillsup.shop.services.ProductServices;
 import ua.skillsup.shop.services.converters.ProductConverter;
 import ua.skillsup.shop.services.dto.ProductDto;

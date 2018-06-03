@@ -1,4 +1,4 @@
-package ua.skillsup.shop.jp1.dao;
+package ua.skillsup.shop.web.dao;
 
 /**
  * Created by Aleksey on 14.04.2018.

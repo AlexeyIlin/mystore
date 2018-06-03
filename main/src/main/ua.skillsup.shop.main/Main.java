@@ -1,8 +1,5 @@
-import javafx.application.Application;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import ua.skillsup.shop.jp1.dao.module.repository.impl.UserDaoImpl;
 import ua.skillsup.shop.services.ProductServices;
 import ua.skillsup.shop.services.UserServices;
 import ua.skillsup.shop.services.dto.UserDto;
@@ -38,8 +35,6 @@ public class Main {
                 System.out.println(userService.findAll());
             }
         }
-
-
 
 
     }

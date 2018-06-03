@@ -1,7 +1,7 @@
-package ua.skillsup.shop.jp1.dao.module.repository.impl;
+package ua.skillsup.shop.web.dao.module.repository.impl;
 
-import ua.skillsup.shop.jp1.dao.Product;
-import ua.skillsup.shop.jp1.dao.module.repository.ProductDao;
+import ua.skillsup.shop.web.dao.Product;
+import ua.skillsup.shop.web.dao.module.repository.ProductDao;
 
 import java.util.ArrayList;
 import java.util.HashMap;

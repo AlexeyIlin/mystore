@@ -9,4 +9,5 @@
 
     <import resource="context-dao.xml"/>
     <context:annotation-config/>
+    <context:component-scan base-package="ua.skillsup.shop.services"/>
 </beans>

@@ -1,6 +1,6 @@
 package ua.skillsup.shop.services.converters.impl;
 
-import ua.skillsup.shop.jp1.dao.Product;
+import ua.skillsup.shop.web.dao.Product;
 import ua.skillsup.shop.services.converters.ProductConverter;
 import ua.skillsup.shop.services.dto.ProductDto;
 

@@ -1,6 +1,6 @@
-package ua.skillsup.shop.jp1.dao.module.repository;
+package ua.skillsup.shop.web.dao.module.repository;
 
-import ua.skillsup.shop.jp1.dao.Product;
+import ua.skillsup.shop.web.dao.Product;
 
 import java.util.List;
 

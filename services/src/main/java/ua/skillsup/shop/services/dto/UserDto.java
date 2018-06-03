@@ -5,33 +5,35 @@ package ua.skillsup.shop.services.dto;
  */
 public class UserDto {
 
-    private String FirstName;
-    private String LastName;
+    private String firstName;
+    private String lastName;
     private int age;
 
     public UserDto(String firstName, String lastName, int age) {
 
-        FirstName = firstName;
-        LastName = lastName;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
     }
 
+    public UserDto() {
+    }
 
     @Override
     public String toString() {
         return "UserDto{" +
-                "FirstName='" + FirstName + '\'' +
-                ", LastName='" + LastName + '\'' +
+                "FirstName='" + firstName + '\'' +
+                ", LastName='" + lastName + '\'' +
                 ", age=" + age +
                 '}';
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public int getAge() {
@@ -39,16 +41,16 @@ public class UserDto {
     }
 
 
-
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
+
 }
