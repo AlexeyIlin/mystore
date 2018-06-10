@@ -1,7 +1,7 @@
 package ua.skillsup.shop.services.converters.impl;
 
 import org.springframework.stereotype.Component;
-import ua.skillsup.shop.web.dao.User;
+import ua.skillsup.shop.web.dao.models.User;
 import ua.skillsup.shop.services.converters.UserConverter;
 import ua.skillsup.shop.services.dto.UserDto;
 

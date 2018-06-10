@@ -1,17 +1,38 @@
-package ua.skillsup.shop.web.dao;
+package ua.skillsup.shop.web.dao.models;
+
+import javax.persistence.*;
 
 /**
  * Created by Aleksey on 14.04.2018.
  */
+@Entity
+@Table(name = "PRODUCTS")
 public class Product {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+
+    @Column(name = "PRODUCT_NAME")
     private String productName;
+
+    @Column(name = "PRICE")
     private double price;
+
+    @Column(name = "CATEGORY")
     private String category;
+
+    @Column(name = "GENDER")
     private String gender;
+
+    @Column(name = "COLOR")
     private String color;
+
+    @Column(name = "SIZE")
     private double size;
+
+    @Column(name = "BALANCE")
     private int balance;
 
     public Product(Long id, String productName, double price, String category, String gender, String color, double size, int balance) {

@@ -1,7 +1,7 @@
 package ua.skillsup.shop.web.dao.module.repository.impl;
 
 import org.springframework.stereotype.Repository;
-import ua.skillsup.shop.web.dao.User;
+import ua.skillsup.shop.web.dao.models.User;
 import ua.skillsup.shop.web.dao.module.repository.UserDao;
 
 import javax.persistence.EntityManager;

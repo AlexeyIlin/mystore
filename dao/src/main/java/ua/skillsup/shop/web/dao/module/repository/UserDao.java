@@ -1,6 +1,6 @@
 package ua.skillsup.shop.web.dao.module.repository;
 
-import ua.skillsup.shop.web.dao.User;
+import ua.skillsup.shop.web.dao.models.User;
 
 import java.util.List;
 

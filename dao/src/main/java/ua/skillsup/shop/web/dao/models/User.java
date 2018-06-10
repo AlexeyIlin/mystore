@@ -1,4 +1,4 @@
-package ua.skillsup.shop.web.dao;
+package ua.skillsup.shop.web.dao.models;
 
 import javax.persistence.*;
 

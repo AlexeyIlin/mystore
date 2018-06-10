@@ -3,7 +3,7 @@ package ua.skillsup.shop.services.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ua.skillsup.shop.web.dao.User;
+import ua.skillsup.shop.web.dao.models.User;
 import ua.skillsup.shop.web.dao.module.repository.UserDao;
 import ua.skillsup.shop.services.UserService;
 import ua.skillsup.shop.services.converters.UserConverter;
