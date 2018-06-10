@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ua.skillsup.shop.web.dao.User;
 import ua.skillsup.shop.web.dao.module.repository.UserDao;
-import ua.skillsup.shop.services.UserServices;
+import ua.skillsup.shop.services.UserService;
 import ua.skillsup.shop.services.converters.UserConverter;
 import ua.skillsup.shop.services.dto.UserDto;
 
@@ -16,14 +16,14 @@ import java.util.List;
  * Created by Aleksey on 14.04.2018.
  */
 @Service
-public class UserServicesImpl implements UserServices{
+public class UserServiceImpl implements UserService {
 
     private final UserDao userDao;
     private final UserConverter userConverter;
 
 
     @Autowired
-    public UserServicesImpl(UserDao userDao, UserConverter userConverter) {
+    public UserServiceImpl(UserDao userDao, UserConverter userConverter) {
         this.userDao = userDao;
         this.userConverter = userConverter;
     }

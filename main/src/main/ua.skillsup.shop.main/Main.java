@@ -1,7 +1,7 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import ua.skillsup.shop.services.ProductServices;
-import ua.skillsup.shop.services.UserServices;
+import ua.skillsup.shop.services.ProductService;
+import ua.skillsup.shop.services.UserService;
 import ua.skillsup.shop.services.dto.UserDto;
 
 import java.io.BufferedReader;
@@ -17,8 +17,8 @@ public class Main {
 
 
         ApplicationContext context = new GenericXmlApplicationContext("context-main.xml");
-        UserServices userService = context.getBean(UserServices.class);
-        ProductServices productService = context.getBean(ProductServices.class);
+        UserService userService = context.getBean(UserService.class);
+        ProductService productService = context.getBean(ProductService.class);
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

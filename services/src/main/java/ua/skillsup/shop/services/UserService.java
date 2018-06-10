@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by Aleksey on 14.04.2018.
  */
-public interface UserServices {
+public interface UserService {
 
     void create(UserDto user);
     void delete(Long id);

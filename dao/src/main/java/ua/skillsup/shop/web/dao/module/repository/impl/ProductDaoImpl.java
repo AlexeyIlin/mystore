@@ -26,7 +26,4 @@ public class ProductDaoImpl implements ProductDao {
         return new ArrayList<>(products.values());
     }
 
-    public Map<Long, Product> getProducts() {
-        return products;
-    }
 }

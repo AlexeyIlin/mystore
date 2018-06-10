@@ -3,7 +3,7 @@ package ua.skillsup.shop.services.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import ua.skillsup.shop.web.dao.Product;
 import ua.skillsup.shop.web.dao.module.repository.ProductDao;
-import ua.skillsup.shop.services.ProductServices;
+import ua.skillsup.shop.services.ProductService;
 import ua.skillsup.shop.services.converters.ProductConverter;
 import ua.skillsup.shop.services.dto.ProductDto;
 
@@ -13,13 +13,13 @@ import java.util.List;
 /**
  * Created by Aleksey on 13.05.2018.
  */
-public class ProductServicesImpl implements ProductServices {
+public class ProductServiceImpl implements ProductService {
 
     private final ProductDao productDao;
     private final ProductConverter productConverter;
 
     @Autowired
-    public ProductServicesImpl(ProductDao productDao, ProductConverter productConverter) {
+    public ProductServiceImpl(ProductDao productDao, ProductConverter productConverter) {
         this.productDao = productDao;
         this.productConverter = productConverter;
     }

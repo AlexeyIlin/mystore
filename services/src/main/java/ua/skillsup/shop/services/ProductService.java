@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by Aleksey on 13.05.2018.
  */
-public interface ProductServices {
+public interface ProductService {
     void create(ProductDto product);
 
     List<ProductDto> findAll();
