@@ -1,5 +1,6 @@
 package ua.skillsup.shop.services.converters.impl;
 
+import org.springframework.stereotype.Component;
 import ua.skillsup.shop.web.dao.models.Product;
 import ua.skillsup.shop.services.converters.ProductConverter;
 import ua.skillsup.shop.services.dto.ProductDto;
@@ -7,6 +8,7 @@ import ua.skillsup.shop.services.dto.ProductDto;
 /**
  * Created by Aleksey on 13.05.2018.
  */
+@Component
 public class ProductConverterImpl implements ProductConverter{
 
     public Product toEntity(ProductDto dto){

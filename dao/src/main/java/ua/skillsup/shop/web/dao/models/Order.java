@@ -1,8 +1,6 @@
 package ua.skillsup.shop.web.dao.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by Aleksey on 14.04.2018.
@@ -11,6 +9,9 @@ import javax.persistence.Table;
 @Table(name = "ORDERS")
 public class Order {
 
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ORDERID")
     private Long orderid;
 
@@ -20,7 +21,7 @@ public class Order {
     @Column(name = "PRODUCTID")
     private Long productid;
 
-    @Column(name = "PRICE")
+    @Column(name = "TOTAL_PRICE")
     private double price;
 
     @Column(name = "AMOUNT")

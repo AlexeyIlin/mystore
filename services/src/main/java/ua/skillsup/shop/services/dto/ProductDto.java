@@ -23,6 +23,9 @@ public class ProductDto {
         this.balance = balance;
     }
 
+    public ProductDto() {
+    }
+
     public String getProductName() {
         return productName;
     }

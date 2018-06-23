@@ -35,6 +35,9 @@ public class Product {
     @Column(name = "BALANCE")
     private int balance;
 
+    public Product() {
+    }
+
     public Product(Long id, String productName, double price, String category, String gender, String color, double size, int balance) {
         this.id = id;
         this.productName = productName;
