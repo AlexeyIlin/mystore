@@ -27,7 +27,7 @@ public class Order {
     @Column(name = "AMOUNT")
     private int amount;
 
-    public Order(Long orderid) {
+    public Order() {
     }
 
     public Order(Long orderid, Long userid, Long productid, double price, int amount) {
