@@ -8,7 +8,7 @@ public interface OrderService {
 
     void create(OrderDto order);
     void delete(Long orderid);
-    //void update(Long orderid, OrderDto order);
+    void update(Long orderid, OrderDto order);
 
     List<OrderDto> findAll();
 

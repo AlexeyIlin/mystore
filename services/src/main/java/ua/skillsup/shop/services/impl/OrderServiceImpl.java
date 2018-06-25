@@ -46,6 +46,12 @@ public class OrderServiceImpl implements OrderService {
         orderDao.delete(orderid);
     }
 
+    @Transactional
+    public void update(Long orderid, OrderDto order){
+        Order orderEntity = orderConverter.toEntity(order);
+        orderDao.update(orderid, orderEntity);
+    }
+
 
 
 }

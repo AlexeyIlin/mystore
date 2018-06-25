@@ -45,5 +45,11 @@ public class OrderControler {
         orderService.delete(orderid);
     }
 
+    @RequestMapping(value = "{orderid}" , method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void update(@PathVariable("orderid") Long orderid, @RequestBody OrderDto order){
+        Log.info("Order updated", orderid, order);
+        orderService.update(orderid, order);
+    }
 
 }
