@@ -38,5 +38,12 @@ public class OrderControler {
         orderService.create(order);
     }
 
+    @RequestMapping(value = "{orderid}", method = RequestMethod.DELETE)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable("orderid") Long orderid){
+        Log.info("Order Deleted" , orderid);
+        orderService.delete(orderid);
+    }
+
 
 }

@@ -41,4 +41,11 @@ public class OrderServiceImpl implements OrderService {
         return orderDto;
     }
 
+    @Transactional
+    public void delete(Long orderid){
+        orderDao.delete(orderid);
+    }
+
+
+
 }
